@@ -10,6 +10,12 @@ h2{
 h3{
 	font-weight: 500;
 }
+.btn{
+	border-radius: 30px;
+}
+html{
+	scroll-behavior: smooth;
+}
 /*Navigation*/
 #nav-bar{
 	position: static ;
@@ -163,10 +169,11 @@ h3{
 	margin-top: 12px;
 	background: #00000070;
 	position: absolute;
-	color: #ccc;
+	color: #fff;
 	transform: translateY(-200%);
 	opacity: 0;
 }
+
 .rooms-pic :hover p{
 	opacity: 1;
 	transition: 0.5s;
@@ -175,17 +182,37 @@ h3{
 	width: 100%;
 	height: auto;
 }
-/* Single ROOM*/
+/*Call-to-action*/
 #room{
-	background-image: url(../images/header4.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url(../images/header4.jpg);
 	background-attachment: fixed;
-	height: 200px;
+	height: 300px;
+	padding-bottom: 30px;
+	text-align: center;
+
 }
-/*Price Plans*/
-#price{
+.call-to-action{
+	margin:auto;
+	padding-top: 2%;
+}
+.call-to-action h3{
+	color: #fff;
+	font-size: 300%;
+	letter-spacing: 7px;
+	margin-top: 30px;
+}
+.cta-txt{
+	color: #fff;
+	display: block;
+	
+	font-size: 200%;
+}
+/*TESTIMONIALS*/
+#testimonials{
 	padding: 50px;
+	color: #555;
 }
-#price h2::after{
+#testimonials h2::after{
 	content: '';
 	display:block;
 	height: 3px;
@@ -193,54 +220,85 @@ h3{
 	margin: 20px auto;
 	background: #007bff
 }
-.single-price{
-	margin: 10px auto;
-	display: inline;
-	float: left;
-	width: 100%;
-	background: #007bff; 
-	border-radius: 30px;
+#testimonials.row{
+	margin-top: 30px;
+}
+.col-md-4{
+	margin-top: 40px auto;
+}
+.profile{
+	background-color: #efefef;
+	padding: 70px 10px 10px;
+}
+.user{
+	width: 120px;
+	height: 120px;
+}
+.profile img{
+	top:-60px;
+	position: absolute;
+	left: calc(50% - 60px);
+	border-radius: 50%;
+	border: 10px solid #fff;
+}
+.profile h4{
+	font-size: 20px;
+	margin-top: 15px;
+	color: #007bff;
+}
+
+.profile:hover{
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: 0.5s;
+}
+/*CONTACT*/
+#contact{
+	background: #007bff;
+	background-size: cover;
+	background-position: center;
+	color: black;
+	background-attachment: fixed;
+	padding: 50px;
 
 }
-.single-price:hover{
-	box-shadow: 0px 2px 20px #333;
+h5{
+	color: #fff;
+	margin-bottom: 10px;
+	font-size: 150%;
 }
-.price-head{
-	background-color: #2196f3;
-	display: inline;
-	float: left;
-	padding: 10px 5px;
+#contact h2::after{
+	content: '';
+	display:block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto;
+	background: #efefef;
+}
+.follow-icons{
+	margin-top: 5%;
+}
+.follow-icons a{
+	text-decoration: none;
+}
+.footer-text{
+	margin-top: 5%;
+	color: #fff;
 	text-align: center;
-	width:100%;
 }
-.price-head h3{
+.social{
+	background-color: #fff;
+	width: 50px !important;
+	padding: 15px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border-radius: 50%;
+}
+.social:hover{
+	background-color: #efefef;
+	transition: 0.2s;
+}
+address{
 	color: #fff;
-	font-size: 30px;
-	margin-bottom: 5px;
-	padding: 5px;
-	text-transform: capitalize;
-}
-.price-head p{
-	font-size: 25px;
-	color: #ccc;
-	font-weight: bold;
-	line-height: 13px;
-}
-#price span{
-	font-size: 15px;
-}
-.price-content{
-	display: inline;
-	float: left;
-	width: 100%;
-	padding: 0 15px;
-}
-.price-content ul li{
-	border-bottom: 1px solid #aaa;
-	list-style: none;
-	padding: 15px 10px;
-	color: #fff;
-}
-ul li:last-child{
-	border: none;
+	line-height: 2;
 }
